@@ -1,1 +1,1 @@
-# Huffman
+# Partie naïve du Projet Huffman
