@@ -40,12 +40,11 @@ Element* recherche_element(Element *liste,int pos)
         return recherche_element(liste->next,pos-1);
 
 }
-
-
 Element *occurence_trie(FILE *fichier)
 {
     Element *tab = NULL;
     Element *temp;
+    Element *temp2;
     char c;
     int test=0;
     do
@@ -57,10 +56,9 @@ Element *occurence_trie(FILE *fichier)
             int a = 0;
             int b = list_size(tab);
             int p=(a+b)/2;
-            //print_liste_chaine(tab);
             if (tab!=NULL)
             {
-                while (a<b && test==0)
+                while ((a<b) && test==0)
                 {
                     temp = recherche_element(tab,p);
                     if (temp->charactere==c)
@@ -70,45 +68,27 @@ Element *occurence_trie(FILE *fichier)
                     }
                     else if (temp->charactere > c)
                     {
-                        b = p-1;
+                        if (b!=a+1)
+                            b = p-1;
+                        else
+                            b = p;
                     }
                     else
                     {
                        a = p+1;
                     }
-                    if(a<b)
+                    if(a<=b)
                         p = (a+b)/2;
                 }
                 if (test==0)
                 {
-                    if (temp->charactere>c)
-                    {
-                        temp = recherche_element(tab,p-1);
-                        if (temp->charactere!=c)
-                        {
-                            if (temp->charactere<c)
-                                list_insert(&tab,c,p);
-                            else
-                                list_insert(&tab,c,p-1);
-                        }
-                        else
-                            temp->data++;
-                    }
+                    temp = recherche_element(tab,p);
+                    if (temp->charactere==c)
+                        temp->data++;
+                    else if (c<temp->charactere)
+                        list_insert(&tab,c,p);
                     else
-                    {
-                        if (p+1<=list_size(tab))
-                            temp = recherche_element(tab,p+1);
-                        if (temp->charactere!=c)
-                        {
-                            if (temp->charactere<c)
-                                list_insert(&tab,c,p+2);
-                            else
-                                list_insert(&tab,c,p+1);
-                        }
-                        else
-                            temp->data++;
-
-                    }
+                        list_insert(&tab,c,p+1);
 
                 }
             }
