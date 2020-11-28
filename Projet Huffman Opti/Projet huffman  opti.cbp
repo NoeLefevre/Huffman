@@ -63,11 +63,11 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Liste_occurence/Liste_occurence.h" />
-		<Unit filename="Pïle/Pile.c">
+		<Unit filename="Pile/Pile.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="Pïle/Pile.h" />
-		<Unit filename="Stucture/Structure.h" />
+		<Unit filename="Pile/Pile.h" />
+		<Unit filename="Structure/Structure.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
