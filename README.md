@@ -3,5 +3,5 @@ Ceci est le github pour le projet Huffman en C et en introduction au Génie Logi
 Groupe n°...
 Noé Lefèvre
 Michaël Sok
-Eric ChingChong
+Eric Wang
 Arthur Gaubillard
