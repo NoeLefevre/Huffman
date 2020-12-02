@@ -4,4 +4,4 @@ Groupe n°...
 Noé Lefèvre
 Michaël Sok
 Eric Wang
-Arthur Gaubillard
+Arthur Gobilliard
