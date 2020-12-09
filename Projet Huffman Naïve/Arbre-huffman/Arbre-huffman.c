@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include "Arbre-huffman.h"
+#include "../Dictionnaire/Dictionnaire.h"
+#include "../Liberation/Liberation.h"
 Node* create_node(int val,char charactere){
     Node* new_node = (Node*)malloc(sizeof(Node));
     new_node->data = val;
@@ -106,19 +108,20 @@ Node * arbre_huffman(Element *l)
     List_node *min1;
     List_node *min2;
     Node *n=NULL;
-    while (l_noeud!=NULL)
+    while (l_noeud != NULL)
     {
         min1 = min_list(l_noeud);
-
-        list_remove(&l_noeud,min1);
+        list_remove(&l_noeud, min1);
         min2 = min_list(l_noeud);
-        list_remove(&l_noeud,min2);
-        n=create_node(min2->no->data+min1->no->data,"c");
+        list_remove(&l_noeud, min2);
+        n = create_node(min2->no->data + min1->no->data, 'c');
         temp = create_el_node(n);
-        n->left=min1->no;
-        n->right=min2->no;
-        if (l_noeud!=NULL)
-            ajouter_ln_fin(&l_noeud,temp);
+        n->left = min1->no;
+        n->right = min2->no;
+        if (l_noeud != NULL)
+            ajouter_ln_fin(&l_noeud, temp);
+
     }
+    free_tab2(l_noeud);
     return n;
 }

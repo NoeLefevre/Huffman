@@ -2,16 +2,14 @@
 #include <stdlib.h>
 #include <string.h>
 #include "Decompress.h"
-
-
-FILE *decompress(FILE* fichier,Node *tree)
+#include "../Binaire/Binaire.h"
+#include "../Liberation/Liberation.h"
+FILE* decompress(FILE* fichier,Node *tree)
 {
     char c;
-    int i;
     Node *temp=tree;
     FILE *trad=NULL;
-    trad = fopen("trad.txt","w+");
-    int *nb_binaire=malloc(8*sizeof(int));
+    fopen_s(&trad, "trad.txt", "w+");
     do
     {
         c = fgetc(fichier);
@@ -23,15 +21,11 @@ FILE *decompress(FILE* fichier,Node *tree)
                 temp = temp->left;
             if (temp->right==NULL && temp->left==NULL)
             {
-                nb_binaire = binaire (nb_binaire,(int)temp->charactere);
-                for (i=0;i<8;i++)
-                {
-                    fprintf(trad,"%d",nb_binaire[i]);
-                }
+                fprintf(trad,"%c",temp->charactere);
                 temp = tree;
             }
 
         }
-    }while (c!=EOF);
+    } while (c != EOF);
     return trad;
 }

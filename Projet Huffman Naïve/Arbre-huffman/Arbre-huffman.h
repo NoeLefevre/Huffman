@@ -1,5 +1,5 @@
-#ifndef ARBRE-HUFFMAN_H_INCLUDED
-#define ARBRE-HUFFMAN_H_INCLUDED
+#ifndef ARBRE_HUFFMAN_H_INCLUDED
+#define ARBRE_HUFFMAN_H_INCLUDED
 #include "../Structure/Structure.h"
 Node * arbre_huffman(Element *l);
 List_node *create_list_node(Element *l);

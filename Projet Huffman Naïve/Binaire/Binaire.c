@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "../Liberation/Liberation.h"
 void conversion (FILE* fichier,FILE *fichier2)
 {
     char c;
@@ -20,9 +21,10 @@ void conversion (FILE* fichier,FILE *fichier2)
 
         }
     }while (c!=EOF);
+    free(nb_binaire);
 }
 
-int binaire(int *tab, int x)
+int* binaire(int *tab, int x)
 {
     int quotient = x;
     int i=0;
@@ -35,11 +37,11 @@ int binaire(int *tab, int x)
         tab[7-i] = reste;
         i++;
     }
-    if (i<8)
+    if (i < 8)
     {
-        for (j=i;j<8;j++)
+        for (j = i; j < 8; j++)
         {
-            tab[7-j] = 0;
+            tab[7 - j] = 0;
         }
     }
     return tab;
