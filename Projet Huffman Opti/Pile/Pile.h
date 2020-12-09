@@ -1,7 +1,6 @@
 #ifndef PILE_H_INCLUDED
 #define PILE_H_INCLUDED
 #include "../Structure/Structure.h"
-
 typedef struct Stack{
     Node *no;
     struct Stack *next;

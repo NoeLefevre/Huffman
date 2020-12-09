@@ -1,6 +1,6 @@
 #ifndef LISTE_OCCURENCE_H_INCLUDED
 #define LISTE_OCCURENCE_H_INCLUDED
-#include "../Stucture/Structure.h"
+#include "../Structure/Structure.h"
 void list_insert(Element** l,char n, int pos);
 int list_size(Element *l);
 Element* recherche_element(Element *liste,int pos);

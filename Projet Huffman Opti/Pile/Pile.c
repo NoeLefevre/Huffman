@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include "Pile.h"
-
 void push(Stack**s, Node* val){
     Stack *nouv = malloc(sizeof(Stack));
     nouv->no = val;

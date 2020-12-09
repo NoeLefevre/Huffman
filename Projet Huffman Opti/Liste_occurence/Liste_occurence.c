@@ -29,6 +29,8 @@ int list_size(Element *l)
         i = i + 1;
         temp=temp->next;
     }
+    temp = NULL;
+    free(temp);
     return i;
 }
 
@@ -44,7 +46,6 @@ Element *occurence_trie(FILE *fichier)
 {
     Element *tab = NULL;
     Element *temp;
-    Element *temp2;
     char c;
     int test=0;
     do
@@ -126,15 +127,13 @@ void tri_a_bulle(Element **l)
 
         }
     }
+    temp = NULL;
 }
 
 void list_swap(Element** l, Element* t1, Element* t2){
     Element *temp=*l;
     Element *temp2=*l;
-    int temp3;
-    int temph;
-    int temp4;
-    int temp5;
+    Element* temp5;
     if (list_size(*l)==1)
     {
         temp2 = temp;

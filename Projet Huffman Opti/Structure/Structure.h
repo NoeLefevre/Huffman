@@ -23,8 +23,8 @@ typedef struct List_node{
 typedef struct Node_d {
     char charactere;
     char *code;
-    struct Node* left;
-    struct Node* right;
+    struct Node_d* left;
+    struct Node_d* right;
 } Node_d;
 
 #endif // STRUCTURE_H_INCLUDED
