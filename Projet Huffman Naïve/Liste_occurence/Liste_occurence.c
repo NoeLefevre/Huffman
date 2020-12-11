@@ -27,19 +27,19 @@ void ajouter_el_fin(Element** liste, Element* el){
 
 }
 
-int list_position2(Element* l,char p){
+int list_position2(Element* l,char p){	//Cette fonction permet de détecter la présence d'un élément dans la liste
     int i=1;
     Element *temp;
     temp = l;
-    while (temp!=NULL && (int)temp->charactere!=(int)p)
+    while (temp!=NULL && (int)temp->charactere!=(int)p) //on effectue la boucle si la case suivante existe et tant qu'on n'a pas détecté l'élément recherché
     {
     i++;
     temp = temp->next;
     }
-    if (temp == NULL)
+    if (temp == NULL)//on arrive à la fin et on ne l'a pas détecté
         return -1;
     else
-        return i;
+        return i;//on renvoie la position de l'élément
 
 }
 
@@ -53,20 +53,20 @@ Element* occurence(FILE *fichier)
         c = fgetc(fichier);
         if (c!=EOF)
         {
-            if (l==NULL || list_position2(l,c)==-1)
-        {
-            Element *nouv_el = creer_el(c);
-            ajouter_el_fin(&l,nouv_el);
-        }
-        else
-        {
-            Element *temp=l;
-            for (i=0;i<list_position2(l,c)-1;i++)
+            if (l==NULL || list_position2(l,c)==-1)//si l'élément n'est pas dans la liste (on se sert de la fonction list_position pour le détecter) :
             {
-                temp = temp->next;
+            Element *nouv_el = creer_el(c);
+            ajouter_el_fin(&l,nouv_el);//On se sert des deux fonctions creer_el et ajouter_el_fin pour créer l'élément et l'ajouter en tête de liste
             }
-            temp->data++;
-        }
+            else//si l'élément est dans la liste
+            {
+                Element *temp=l;
+                for (i=0;i<list_position2(l,c)-1;i++)//on va jusqu'à sa position
+                {    
+                    temp = temp->next;
+                }
+                temp->data++;//on l'incrémente
+            }
         }
     }while (c!=EOF);
     return l;
