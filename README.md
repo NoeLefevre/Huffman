@@ -47,7 +47,7 @@ L'utilisateur sera accueill par une interface simple, il peut appuyer sur <kbd>1
 <img src="doc/Image/menu.png"/>
 
 ### Compression
-Pour la compression, lorsque le fichier texte est rempli, il faut appuyer sur <kbd>1</kbd> : </br></br>
+Pour la compression, lorsque le fichier texte est rempli, il faut appuyer sur <kbd>1</kbd> (la compression, dans le meilleur des cas ne dure que 0.3s): </br></br>
 <img src="doc/Image/compression_opti.png"/>
 </br>
 ### Décompression
