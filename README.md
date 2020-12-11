@@ -57,6 +57,8 @@ Pour la décompression on a : </br></br>
 
 # Autres
 S'il y a un problème lors du lancement du programme, veuillez envoyer un mail à : **noe.lefevre@efrei.net**
+</br></br>
+![](doc/Image/stonks.gif)
 
 
 
