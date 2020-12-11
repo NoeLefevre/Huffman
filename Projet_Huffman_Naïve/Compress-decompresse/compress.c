@@ -12,10 +12,11 @@
 
 FILE* compress(FILE* fichier, Node **arbre_h,Node ** arbre_temp)
 {
-    Element *l=NULL;
-    FILE *dictio=NULL;
-    FILE *Encodage=NULL;
-    fopen_s(&dictio,"dictionnaire.txt","r+");
+    Element *l=NULL;//Liste d'occurence
+    FILE *dictio=NULL;//Fichier dictionnaire
+    FILE *Encodage=NULL;//Fichier d'encodage
+    fopen_s(&dictio,"dictionnaire.txt","r+");//On ouvre le fichier dictionaire
+    //Création des différentes structures de données utiles à la compression
     l=occurence(fichier);
     *arbre_h = arbre_huffman(l);
     fseek (fichier,0,SEEK_SET);
