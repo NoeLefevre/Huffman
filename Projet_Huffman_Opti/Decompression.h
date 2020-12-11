@@ -1,0 +1,7 @@
+#ifndef DECOMPRESSION_H_INCLUDED
+#define DECOMPRESSION_H_INCLUDED
+
+void Decompression();
+
+#endif // DECOMPRESSION_H_INCLUDED
+
