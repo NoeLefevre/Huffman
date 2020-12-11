@@ -28,11 +28,11 @@ FILE *encodage(FILE *dictio,FILE *fichier)
                     //printf("%s",p);
                     test = 0;
                     p[strlen(p) - 1] = '\0'; //On mesure la longueur du code du caractère
-                    fprintf(fichier2, "%s", p); //On print le code du caractère dans le fichier encodage
+                    fprintf(fichier2, "%s", p); //On écrit le code du caractère dans le fichier encodage
                 }
             }
         }
-        c = fgetc(fichier); //On avance le curseur dans le fichier à encoder pour re-parcourir le dictionnaire à la recherche du caractère suivant
+        c = fgetc(fichier); //On prend le prochain caractère dans le fichier à encoder pour re-parcourir le dictionnaire à la recherche du caractère suivant
         fseek(dictio, 0, SEEK_SET); //On remet le curseur au début dans le dictionnaire
         //printf("%c",c);
     }
