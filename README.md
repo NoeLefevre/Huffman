@@ -21,8 +21,12 @@ Ce projet a été conçu sous CodeBlocks et Visual Studio
 </br>
 Le programme a été lancé **UNIQUEMENT SOUS WINDOWS**, les configurations sont les suivantes : </br>
 | Configuration requise  | Minimal | Recommandé |  
-|--------------|--------|--------|-----------|
+|------------------------|---------|------------|
 | Système d'exploitation nécessaire ! Windows 7 x64 | Windows 10 x64 |
 | Processeur | Intel Core Duo ou mieux | Intel Core I5 ou mieux |
 | Mémoire vive | 512 Mo de mémoire | 8 Go de mémoire |
 | Espace requis | 10 Mo requis |10 Mo requis |
+
+| Architecture | Master | Stable | Installer |
+|--------------|--------|--------|-----------|
+| x64 | [![Build Status for Master](https://dev.azure.com/ms/PowerToys/_apis/build/status/microsoft.PowerToys?branchName=master)](https://dev.azure.com/ms/PowerToys/_build/latest?definitionId=219&branchName=master) | [![Build Status for Stable](https://dev.azure.com/ms/PowerToys/_apis/build/status/microsoft.PowerToys?branchName=stable)](https://dev.azure.com/ms/PowerToys/_build/latest?definitionId=219&branchName=stable) | [![Build Status for Installer](https://github-private.visualstudio.com/microsoft/_apis/build/status/CDPX/powertoys/powertoys-Windows-Official-master-Test?branchName=master)](https://github-private.visualstudio.com/microsoft/_build/latest?definitionId=61&branchName=master) | 
