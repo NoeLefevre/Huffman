@@ -1,4 +1,0 @@
-Noe LEFEVRE
-Michael SOK
-Arthur GOBILLIARD
-Eric WANG
