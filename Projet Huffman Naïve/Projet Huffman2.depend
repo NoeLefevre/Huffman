@@ -1,0 +1,91 @@
+# depslib dependency file v1.0
+1606043102 source:c:\users\lefev\desktop\projet huffman - copie\compress-decompresse\encodage.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Encodage.h"
+
+1606209560 c:\users\lefev\desktop\projet huffman - copie\compress-decompresse\encodage.h
+	"../Structure/Structure.h"
+
+1606305319 source:c:\users\lefev\desktop\projet huffman - copie\dictionnaire\dctionnaire.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Dictionnaire.h"
+
+1606305681 c:\users\lefev\desktop\projet huffman - copie\dictionnaire\dictionnaire.h
+	"../Structure/Structure.h"
+	"../Arbre-huffman/Arbre-huffman.h"
+	"../Pile/Pile.h"
+
+1606209090 source:c:\users\lefev\desktop\projet huffman - copie\arbre-huffman\arbre-huffman.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Arbre-huffman.h"
+
+1606209560 c:\users\lefev\desktop\projet huffman - copie\arbre-huffman\arbre-huffman.h
+	"../Structure/Structure.h"
+
+1606209101 source:c:\users\lefev\desktop\projet huffman - copie\binaire\binaire.c
+	"Binaire.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1606209065 c:\users\lefev\desktop\projet huffman - copie\binaire\binaire.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1606209980 source:c:\users\lefev\desktop\projet huffman - copie\compress-decompresse\decompress.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Decompress.h"
+
+1606209980 c:\users\lefev\desktop\projet huffman - copie\compress-decompresse\decompress.h
+	"../Structure/Structure.h"
+	"../Binaire/Binaire.h"
+
+1606209560 c:\users\lefev\desktop\projet huffman - copie\structure\structure.h
+
+1606209761 source:c:\users\lefev\desktop\projet huffman - copie\compress-decompresse\compress.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"compress.h"
+
+1606209649 c:\users\lefev\desktop\projet huffman - copie\compress-decompresse\compress.h
+	"../Binaire/Binaire.h"
+	"../Dictionnaire/Dictionnaire.h"
+	"../Arbre-huffman/Arbre-huffman.h"
+	"../Liste_occurence/Liste_occurence.h"
+	"Encodage.h"
+	"Decompress.h"
+	"../Structure/Structure.h"
+
+1606209886 c:\users\lefev\desktop\projet huffman - copie\liste_occurence\liste_occurence.h
+	"../Structure/Structure.h"
+
+1606042465 source:c:\users\lefev\desktop\projet huffman - copie\liste_occurence\liste_occurence.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Liste_occurence.h"
+
+1606210298 source:c:\users\lefev\desktop\projet huffman - copie\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Compress-decompresse/compress.h"
+
+1606305336 c:\users\lefev\desktop\projet huffman - copie\pile\pile.h
+	"../Structure/Structure.h"
+
+1606305247 source:c:\users\lefev\desktop\projet huffman - copie\pile\pile.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Pile.h"
+
