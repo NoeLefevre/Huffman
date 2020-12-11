@@ -8,11 +8,11 @@ char* nbr_recherche_arbre_recherche(Node_d *tree,char c) //Fonction de recherche
 {
     if (tree->charactere==c)
     {
-        return tree->code; //Si on trouve le caractère on retourne le code
+        return tree->code; //Quand on trouve le caractère on retourne le code
     }
     else
     {
-        if (tree->charactere<c) //Sinon on recherche en fonction du signe, en allant à gauche ou à droite
+        if (tree->charactere<c) //Sinon on recherche en fonction de l'ordre alphabétique des caractères, en allant à gauche ou à droite
             tree = tree->right;
         else
             tree = tree->left;
@@ -25,10 +25,10 @@ FILE *encodage(FILE *fichier,Node_d *tree) //Tous les codes étant déjà triés
     FILE *fichier2=NULL;
     fichier2 = fopen("Encodeur.txt","w+");
     char c=fgetc(fichier);
-    while (c!=EOF) //Tant qu'on a pas atteitn la fin du fichier qu'on veut encoder
+    while (c!=EOF) //Tant qu'on a pas atteint la fin du fichier qu'on veut encoder
     {
-        fprintf(fichier2,"%s",nbr_recherche_arbre_recherche(tree,c)); //On recherche le code du caractère à encoder grâce à l'AVL et on le print dans le fichier encodage
-        c=fgetc(fichier); //On avance dans le fichier qu'on veut encoder
+        fprintf(fichier2,"%s",nbr_recherche_arbre_recherche(tree,c)); //On recherche le code du caractère à encoder grâce à l'AVL et on l'écrit dans le fichier encodage
+        c=fgetc(fichier); //On prend le prochain caractère et on avance dans le fichier qu'on veut encoder
     }
     return fichier2;
 }
