@@ -1,1 +1,1 @@
-# Huffman
+# Partie optimisée du projet Huffman
