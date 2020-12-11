@@ -56,7 +56,7 @@ Pour la décompression on a : </br></br>
 </br>
 
 # Autres
-Si il y a un problème lors du lancement du programme, veuillez envoyer un mail à : **noe.lefevre@efrei.net**
+S'il y a un problème lors du lancement du programme, veuillez envoyer un mail à : **noe.lefevre@efrei.net**
 
 
 
