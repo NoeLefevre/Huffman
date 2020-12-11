@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "Liste_occurence.h"
-void list_insert(Element** l,char n, int pos){
+void list_insert(Element** l,char n, int pos){ //insère un élément dans la liste de façon récursive
     if (l!=NULL)
     {
         if (*l==NULL || pos<=0)
@@ -19,7 +19,7 @@ void list_insert(Element** l,char n, int pos){
 }
 
 
-int list_size(Element *l)
+int list_size(Element *l)//détermine la taille de la liste entrée
 {
     int i=-1;
     Element* temp;
@@ -34,7 +34,7 @@ int list_size(Element *l)
     return i;
 }
 
-Element* recherche_element(Element *liste,int pos)
+Element* recherche_element(Element *liste,int pos) //fonction récursive permettant de trouver un élément précis dans une liste
 {
     if (pos==0 || pos<0)
         return liste;
@@ -42,7 +42,7 @@ Element* recherche_element(Element *liste,int pos)
         return recherche_element(liste->next,pos-1);
 
 }
-Element *occurence_trie(FILE *fichier)
+Element *occurence_trie(FILE *fichier)//fonction principale
 {
     Element *tab = NULL;
     Element *temp;
@@ -54,34 +54,34 @@ Element *occurence_trie(FILE *fichier)
         if (c!=EOF)
         {
             test = 0;
-            int a = 0;
+            int a = 0;//on établit l'intervalle dans lequel on va effectuer la recherche dichotomique (de a à b, p étant le milieu)
             int b = list_size(tab);
             int p=(a+b)/2;
             if (tab!=NULL)
             {
-                while ((a<b) && test==0)
+                while ((a<b) && test==0)//tant que l'intervalle existe toujours et que la recherche dichotomique n'a rien donné
                 {
                     temp = recherche_element(tab,p);
-                    if (temp->charactere==c)
+                    if (temp->charactere==c)//si on est sur la case recherchée, on incrémente 
                     {
                         test = 1;
                         temp->data++;
                     }
-                    else if (temp->charactere > c)
+                    else if (temp->charactere > c)//sinon, si l'élément est plus petit, on réajuste l'intervalle vers le bas
                     {
                         if (b!=a+1)
                             b = p-1;
                         else
                             b = p;
                     }
-                    else
+                    else//sinon on le réajuste vers le haut
                     {
                        a = p+1;
                     }
                     if(a<=b)
                         p = (a+b)/2;
                 }
-                if (test==0)
+                if (test==0)//si l'élément recherché n'existe pas du tout, on l'insère directement trié, puisque la recherche dichotomique nous emmène sur son voisin du dessous ou du dessus
                 {
                     temp = recherche_element(tab,p);
                     if (temp->charactere==c)
@@ -93,7 +93,7 @@ Element *occurence_trie(FILE *fichier)
 
                 }
             }
-            else
+            else//si la liste n'existe pas encore, on l'initialise directement
             {
                 tab = malloc(sizeof(Element));
                 tab->charactere = c;
@@ -107,7 +107,7 @@ Element *occurence_trie(FILE *fichier)
 
 }
 
-void tri_a_bulle(Element **l)
+void tri_a_bulle(Element **l)//trie la liste en fonction des occurences
 {
     int fin=0;
     Element *temp=*l;
@@ -130,7 +130,7 @@ void tri_a_bulle(Element **l)
     temp = NULL;
 }
 
-void list_swap(Element** l, Element* t1, Element* t2){
+void list_swap(Element** l, Element* t1, Element* t2){//échange deux éléments dans une liste
     Element *temp=*l;
     Element *temp2=*l;
     Element* temp5;
