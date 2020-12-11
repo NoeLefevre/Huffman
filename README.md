@@ -12,6 +12,8 @@ Ce projet est en lien avec le codage Huffman : https://docs.google.com/document/
 
 # Fonctionnement
 
-Ce projet a été conçu sous CodeBlocks et Visual Studio </br>
+Ce projet a été conçu sous CodeBlocks et Visual Studio 
+</br>
+</br>
 <img src="doc/Image/cb.png" width="200" height="50"/>
-<img src="doc/Image/vs.png" width="50" height="50"/>
+<img src="doc/Image/vs.jpg" width="50" height="50"/>
