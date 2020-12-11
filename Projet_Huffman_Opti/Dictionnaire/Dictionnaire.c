@@ -3,7 +3,7 @@
 #include <string.h>
 #include "Dictionnaire.h"
 #include "../Liste_occurence/Liste_occurence.h"
-#include "../Lib�ration/Liberation.h"
+#include "../Libération/Liberation.h"
 List_node *create_el_node(Node *n)
 {
     List_node *new_el=malloc(sizeof(List_node));
@@ -33,10 +33,11 @@ Node_d* create_node2(char c,char* code){
     new_node->right = NULL;
     return new_node;
 }
+//Fonctions de base pour la création et l'ajout de noeud à un AVL
 
 int depth(Node_d* tree){
     if(tree == NULL){
-        return 0;//Attention d�finition. -1 ou 0
+        return 0;//Attention définition. -1 ou 0
     }
     else{
         int depth_left = depth(tree->left);
@@ -116,30 +117,31 @@ void add_node_AVL(Node_d** tree, Node_d* node){
     add_node_BST(tree, node);
     balance(tree);
 }
+//
 
 
 
 Node_d *dictionnaire_vrai(FILE **fichier,Node **tree,Element *l_occurence)
 {
-    char *l_code = malloc(1*sizeof(char));
-    Stack *p=NULL;
+    char *l_code = malloc(1*sizeof(char));//Allocation dynamique de la chaine de caractère qui va contenir le code de chaque caractère
+    Stack *p=NULL;//Création de la pile qui va strocké les noeud parcourus qui ne sont pas des feuilles
     Node *temp=*tree;
     Node *temp2;
     Node_d *dict=NULL;
     Node_d *temp_a;
     int compt=-1;
     int i=0;
-    push(&p,temp);
-    while(compt!=list_size(l_occurence))
+    push(&p,temp);//Ajout de la racine à la pile de noeuds
+    while(compt!=list_size(l_occurence))//On parcourt le fichier texte tant qu'on a pas traité tous ses caractères
     {
-        if(temp->right == NULL && temp->left==NULL)
+        if(temp->right == NULL && temp->left==NULL)//Quand on est sur une feuille
         {
             compt++;
             fprintf(*fichier, "%c:%s\n", temp->charactere, l_code);
             temp_a = create_node2(temp->charactere,l_code);
             add_node_AVL(&dict,temp_a);
             free(temp);
-            temp=NULL;
+            temp=NULL;//On supprime la feuille
             temp2 = p->no;
             if (l_code[i-1]=='1')
             {
@@ -149,10 +151,11 @@ Node_d *dictionnaire_vrai(FILE **fichier,Node **tree,Element *l_occurence)
             {
                 temp2->left = NULL;
             }
-            if (temp2->right==NULL && temp2->left==NULL)
+            if (temp2->right==NULL && temp2->left==NULL)//On vérivie si le parent n'est pas aussi devenue une feuille (dernier de la pile)
             {
-                while (compt!=list_size(l_occurence) && temp2->right==NULL && temp2->left==NULL)
+                while (compt!=list_size(l_occurence) && temp2->right==NULL && temp2->left==NULL)// S'arrête quand le noeud n'est plus considéré comme une feuille
                 {
+                    //On supprime les noeuds correspondant
                     temp2 = pop(&p);
                     temp = p->no;
                     if (temp->right == temp2)
@@ -165,7 +168,7 @@ Node_d *dictionnaire_vrai(FILE **fichier,Node **tree,Element *l_occurence)
                     //printf("%d ",temp2->data);
                 }
             }
-            temp = *tree;
+            temp = *tree;//On se replace à la racine
             i=0;
             ///free(l_code);
             //l_code = NULL;
@@ -176,21 +179,22 @@ Node_d *dictionnaire_vrai(FILE **fichier,Node **tree,Element *l_occurence)
             //l_code = realloc(l_code, 1);
 
         }
-        else if(temp->left!=NULL)
+        else if(temp->left!=NULL)//On se déplace d'abord à gauche et on vérifie si on peut y accéder
         {
-            temp2 = temp;
+            temp2 = temp;//Permet de sauvegarder le noeud précédent en cas de suppression futur
             temp = temp->left;
             if (list_position(p,temp)==-1 && temp->right!=NULL && temp->left!=NULL)
             {
-                push(&p,temp);
+                push(&p,temp);//Ajoute le noeud à la pile si ce n'est pas une feuille et s'il n'existe pas déjà dans la liste
             }
-            l_code = realloc(l_code,i+2);
+            l_code = realloc(l_code,i+2);//On réalloue dynamiquement de la mémoire à la chaine de caractère caractère car on ne connait pas sa taille
             l_code[i+1] = '\0';
-            l_code[i] = '0';
+            l_code[i] = '0';//On lui ajoute de code '0' car on va à gauche
             i++;
         }
         else
         {
+             //Sinbn il va à droite, même processus
             temp2 = temp;
             temp = temp->right;
             if (list_position(p,temp)==-1 && temp->right!=NULL && temp->left!=NULL)
