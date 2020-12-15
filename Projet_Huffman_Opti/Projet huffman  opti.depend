@@ -1,0 +1,372 @@
+# depslib dependency file v1.0
+1605884100 source:c:\users\lefev\desktop\projet huffman  opti\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1606300697 source:c:\users\lefev\desktop\projet huffman  opti - copie\arbre_huffman\arbre_huffman.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Arbre_huffman.h"
+
+1606300697 c:\users\lefev\desktop\projet huffman  opti - copie\arbre_huffman\arbre_huffman.h
+	"../Stucture/Structure.h"
+	"../File/File.h"
+
+1606300697 c:\users\lefev\desktop\projet huffman  opti - copie\stucture\structure.h
+
+1606300778 c:\users\lefev\desktop\projet huffman  opti - copie\file\file.h
+	"../Stucture/Structure.h"
+
+1606300697 source:c:\users\lefev\desktop\projet huffman  opti - copie\conversion\conversion.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Conversion.h"
+
+1606300697 c:\users\lefev\desktop\projet huffman  opti - copie\conversion\conversion.h
+
+1606300697 source:c:\users\lefev\desktop\projet huffman  opti - copie\decompress\decompress.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Decompress.h"
+
+1606300697 c:\users\lefev\desktop\projet huffman  opti - copie\decompress\decompress.h
+	"../Stucture/Structure.h"
+	"../Arbre_huffman/Arbre_huffman.h"
+
+1606306704 source:c:\users\lefev\desktop\projet huffman  opti - copie\dictionnaire\dictionnaire.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Dictionnaire.h"
+
+1606306486 c:\users\lefev\desktop\projet huffman  opti - copie\dictionnaire\dictionnaire.h
+	"../Stucture/Structure.h"
+	"../Pïle/Pile.h"
+
+1606300697 source:c:\users\lefev\desktop\projet huffman  opti - copie\encodage\encodage.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Encodage.h"
+
+1606300697 c:\users\lefev\desktop\projet huffman  opti - copie\encodage\encodage.h
+	"../Stucture/Structure.h"
+
+1606300697 source:c:\users\lefev\desktop\projet huffman  opti - copie\liste_occurence\liste_occurence.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Liste_occurence.h"
+
+1606300697 c:\users\lefev\desktop\projet huffman  opti - copie\liste_occurence\liste_occurence.h
+	"../Stucture/Structure.h"
+
+1606302717 source:c:\users\lefev\desktop\projet huffman  opti - copie\compress\compress.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Compress.h"
+
+1606302605 c:\users\lefev\desktop\projet huffman  opti - copie\compress\compress.h
+	"../Arbre_huffman/Arbre_huffman.h"
+	"../Dictionnaire/Dictionnaire.h"
+	"../Encodage/Encodage.h"
+	"../Liste_occurence/Liste_occurence.h"
+	"../Stucture/Structure.h"
+
+1606300813 source:c:\users\lefev\desktop\projet huffman  opti - copie\file\file.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"File.h"
+
+1606302808 source:c:\users\lefev\desktop\projet huffman  opti - copie\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Compress/Compress.h"
+	"Conversion/Conversion.h"
+	"Decompress/Decompress.h"
+
+1606306418 c:\users\lefev\desktop\projet huffman  opti - copie\pïle\pile.h
+	"../Stucture/Structure.h"
+
+1606306408 source:c:\users\lefev\desktop\projet huffman  opti - copie\pïle\pile.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Pile.h"
+
+1606822695 source:c:\users\lefev\desktop\projet huffman opti\arbre_huffman\arbre_huffman.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Arbre_huffman.h"
+
+1606667104 c:\users\lefev\desktop\projet huffman opti\arbre_huffman\arbre_huffman.h
+	"../Structure/Structure.h"
+	"../File/File.h"
+	"../Libération/Liberation.h"
+
+1606571468 c:\users\lefev\desktop\projet huffman opti\file\file.h
+	"../Structure/Structure.h"
+
+1607176129 source:c:\users\lefev\desktop\projet huffman opti\compress\compress.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Compress.h"
+
+1607176018 c:\users\lefev\desktop\projet huffman opti\compress\compress.h
+	"../Arbre_huffman/Arbre_huffman.h"
+	"../Dictionnaire/Dictionnaire.h"
+	"../Encodage/Encodage.h"
+	"../Liste_occurence/Liste_occurence.h"
+	"../Structure/Structure.h"
+	"../Libération/Liberation.h"
+
+1607178334 c:\users\lefev\desktop\projet huffman opti\dictionnaire\dictionnaire.h
+	"../Structure/Structure.h"
+	"../Pile/Pile.h"
+	"../Liste_occurence/Liste_occurence.h"
+	"../Libération/Liberation.h"
+
+1606571468 c:\users\lefev\desktop\projet huffman opti\encodage\encodage.h
+	"../Structure/Structure.h"
+
+1606571468 c:\users\lefev\desktop\projet huffman opti\liste_occurence\liste_occurence.h
+	"../Structure/Structure.h"
+
+1607000082 source:c:\users\lefev\desktop\projet huffman opti\conversion\conversion.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Conversion.h"
+
+1606920453 c:\users\lefev\desktop\projet huffman opti\conversion\conversion.h
+
+1607177688 source:c:\users\lefev\desktop\projet huffman opti\decompress\decompress.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"Decompress.h"
+
+1607177660 c:\users\lefev\desktop\projet huffman opti\decompress\decompress.h
+	"../Structure/Structure.h"
+	"../Arbre_huffman/Arbre_huffman.h"
+	"../Conversion/Conversion.h"
+
+1607178509 source:c:\users\lefev\desktop\projet huffman opti\dictionnaire\dictionnaire.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Dictionnaire.h"
+
+1606662030 source:c:\users\lefev\desktop\projet huffman opti\encodage\encodage.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Encodage.h"
+
+1606564324 source:c:\users\lefev\desktop\projet huffman opti\file\file.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"File.h"
+
+1606811573 source:c:\users\lefev\desktop\projet huffman opti\liste_occurence\liste_occurence.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Liste_occurence.h"
+
+1607178244 source:c:\users\lefev\desktop\projet huffman opti\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"Compress/Compress.h"
+	"Conversion/Conversion.h"
+	"Decompress/Decompress.h"
+
+1606571482 source:c:\users\lefev\desktop\projet huffman opti\pile\pile.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Pile.h"
+
+1606571488 c:\users\lefev\desktop\projet huffman opti\pile\pile.h
+	"../Structure/Structure.h"
+
+1606573444 c:\users\lefev\desktop\projet huffman opti\structure\structure.h
+
+1606816744 c:\users\lefev\desktop\projet huffman opti\libération\liberation.h
+	"../Structure/Structure.h"
+	"../File/File.h"
+	"../Pile/Pile.h"
+
+1606817032 source:c:\users\lefev\desktop\projet huffman opti\libération\liberation.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Liberation.h"
+
+1607255893 source:c:\users\lefev\desktop\projet huffman opti - copie (2)\arbre_huffman\arbre_huffman.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Arbre_huffman.h"
+	"../Libération/Liberation.h"
+
+1607251705 c:\users\lefev\desktop\projet huffman opti - copie (2)\arbre_huffman\arbre_huffman.h
+	"../Structure/Structure.h"
+	"../File/File.h"
+
+1606573444 c:\users\lefev\desktop\projet huffman opti - copie (2)\structure\structure.h
+
+1607251634 c:\users\lefev\desktop\projet huffman opti - copie (2)\file\file.h
+	"../Structure/Structure.h"
+
+1607251569 c:\users\lefev\desktop\projet huffman opti - copie (2)\libération\liberation.h
+	"../Structure/Structure.h"
+	"../File/File.h"
+	"../Pile/Pile.h"
+
+1607251663 c:\users\lefev\desktop\projet huffman opti - copie (2)\pile\pile.h
+	"../Structure/Structure.h"
+
+1607468282 source:c:\users\lefev\desktop\projet huffman opti - copie (2)\compress\compress.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Compress.h"
+	"../Arbre_huffman/Arbre_huffman.h"
+	"../Dictionnaire/Dictionnaire.h"
+	"../Encodage/Encodage.h"
+	"../Liste_occurence/Liste_occurence.h"
+	"../Libération/Liberation.h"
+
+1607251445 c:\users\lefev\desktop\projet huffman opti - copie (2)\compress\compress.h
+	"../Structure/Structure.h"
+
+1607251605 c:\users\lefev\desktop\projet huffman opti - copie (2)\dictionnaire\dictionnaire.h
+	"../Structure/Structure.h"
+	"../Pile/Pile.h"
+
+1607251445 c:\users\lefev\desktop\projet huffman opti - copie (2)\liste_occurence\liste_occurence.h
+	"../Structure/Structure.h"
+
+1607251445 c:\users\lefev\desktop\projet huffman opti - copie (2)\encodage\encodage.h
+	"../Structure/Structure.h"
+
+1607000082 source:c:\users\lefev\desktop\projet huffman opti - copie (2)\conversion\conversion.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Conversion.h"
+
+1606920453 c:\users\lefev\desktop\projet huffman opti - copie (2)\conversion\conversion.h
+
+1607255917 source:c:\users\lefev\desktop\projet huffman opti - copie (2)\decompress\decompress.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"Decompress.h"
+	"../Arbre_huffman/Arbre_huffman.h"
+	"../Conversion/Conversion.h"
+
+1607251445 c:\users\lefev\desktop\projet huffman opti - copie (2)\decompress\decompress.h
+	"../Structure/Structure.h"
+
+1607267798 source:c:\users\lefev\desktop\projet huffman opti - copie (2)\dictionnaire\dictionnaire.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Dictionnaire.h"
+	"../Liste_occurence/Liste_occurence.h"
+	"../Libération/Liberation.h"
+
+1607251445 source:c:\users\lefev\desktop\projet huffman opti - copie (2)\encodage\encodage.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Encodage.h"
+
+1607251634 source:c:\users\lefev\desktop\projet huffman opti - copie (2)\file\file.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"File.h"
+
+1607251569 source:c:\users\lefev\desktop\projet huffman opti - copie (2)\libération\liberation.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Liberation.h"
+
+1607251445 source:c:\users\lefev\desktop\projet huffman opti - copie (2)\liste_occurence\liste_occurence.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Liste_occurence.h"
+
+1607251663 source:c:\users\lefev\desktop\projet huffman opti - copie (2)\pile\pile.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Pile.h"
+
+1607187882 source:c:\users\lefev\desktop\projet huffman opti - copie (2)\compress.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"Compress/Compress.h"
+	"Conversion/Conversion.h"
+
+1607187882 source:c:\users\lefev\desktop\projet huffman opti - copie (2)\decompress.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"Decompress/Decompress.h"
+	"Conversion/Conversion.h"
+
+1607468281 source:c:\users\lefev\desktop\projet huffman opti - copie (2)\compression.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"Compress/Compress.h"
+	"Conversion/Conversion.h"
+	"Compression.h"
+	"Libération/Liberation.h"
+
+1607255944 source:c:\users\lefev\desktop\projet huffman opti - copie (2)\decompression.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"Decompress/Decompress.h"
+	"Conversion/Conversion.h"
+	"Decompression.h"
+	"Libération/Liberation.h"
+
+1607426937 source:c:\users\lefev\desktop\projet huffman opti - copie (2)\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"Decompression.h"
+	"Compression.h"
+
+1607254135 c:\users\lefev\desktop\projet huffman opti - copie (2)\decompression.h
+
+1607426937 c:\users\lefev\desktop\projet huffman opti - copie (2)\compression.h
+

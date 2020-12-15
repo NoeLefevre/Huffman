@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Projet huffman  opti" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Projet huffman  opti" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Projet huffman  opti" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="Arbre_huffman/Arbre_huffman.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Arbre_huffman/Arbre_huffman.h" />
+		<Unit filename="Compress/Compress.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Compress/Compress.h" />
+		<Unit filename="Compression.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Compression.h" />
+		<Unit filename="Conversion/Conversion.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Conversion/Conversion.h" />
+		<Unit filename="Decompress/Decompress.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Decompress/Decompress.h" />
+		<Unit filename="Decompression.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Decompression.h" />
+		<Unit filename="Dictionnaire/Dictionnaire.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Dictionnaire/Dictionnaire.h" />
+		<Unit filename="Encodage/Encodage.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Encodage/Encodage.h" />
+		<Unit filename="File/File.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="File/File.h" />
+		<Unit filename="Libération/Liberation.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libération/Liberation.h" />
+		<Unit filename="Liste_occurence/Liste_occurence.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Liste_occurence/Liste_occurence.h" />
+		<Unit filename="Pile/Pile.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Pile/Pile.h" />
+		<Unit filename="Structure/Structure.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
